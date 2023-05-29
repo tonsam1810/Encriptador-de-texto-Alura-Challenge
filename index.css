@@ -1,0 +1,792 @@
+body{background-color:#E5E5E5 ;
+  
+}
+
+
+main{
+    font-family:'Arial Narrow';
+}
+.divlogo{
+   
+    width: 200px;
+    margin-top: 30px;
+  
+}
+
+
+#txt_salida{
+position: absolute;
+width: 410px;
+height: 505px;
+left: 930px;
+margin-top: 20px;
+
+padding-top: 100px;
+text-align: center;
+
+/* White */
+
+background: #FFFFFF;
+/* shadow */
+
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
+}
+
+
+.txt_encriptar{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    margin-top: 30px;
+    
+   left: 180px;
+   padding-top: 100px;
+   
+   
+   
+}
+textarea{
+    width: 100%;
+    height: 350px;
+    background-color: #E5E5E5;
+    border: none;
+    font-size: 32px;
+    color: #0A3871;
+    text-decoration: none;
+
+}
+
+
+
+
+.alertas{
+ 
+    height: 16px;
+    
+}
+.alerta{
+    position: relative;
+    
+    float: left;
+    padding-right: 10px;
+}
+.alertas p {
+    font-size: 12px;
+    height: 16px;
+    padding-top: 2px;
+   
+    
+    
+}
+
+.botones{
+    position: relative;
+    margin-top: 30px;
+  
+   
+}
+
+#btnencriptar{
+    
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 310px;
+    height: 67px;
+    background: #0A3871;
+    border: 1px solid #E5E5E5;
+    border-radius: 24px;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-align: center;
+    color: white;
+
+
+
+
+}
+
+#btndesencriptar{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+   
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    
+    width: 310px;
+    height: 67px;
+    
+    /* Light gray */
+    
+    background: #D8DFE8;
+    /* Dark blue/dark-blue-300 */
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+
+    color: #0A3871;
+}
+
+textarea::placeholder {
+     color: #0A3871; 
+     border: none;
+     font-family: 'Arial Narrow';
+ }
+
+
+#salidaEncriptador{
+    font-size: 24px;
+    width: 336px;
+  
+    left: 32px;
+    position: absolute;
+    color: #495057;
+    display: none;
+    
+   
+    
+}
+
+#mostrartexto{
+    font-size: 24px;
+    width: 340px;
+    height: auto;
+    min-height:410px ;
+    
+    position: relative;
+    color: #495057;
+    display: none;
+    
+}
+
+
+#btncopiar{
+    width: 340px;
+    height: 67px;
+    
+    position: static;
+    
+    background: #D8DFE8;
+    /* Dark blue/dark-blue-300 */
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    
+}
+.salidaimg{
+    width: 336px;
+height: 304px;
+
+}
+#salidaimg h1{
+    width: 300px;
+    height: 58px;
+
+    font-size: 24px;
+    font-weight: 700;
+    
+    text-align: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: 120%;
+    color: #343A40;
+    text-align: center;
+    
+}
+
+#salidaimg p {
+    width: 320px;
+    font-size: 16px;
+    height: 48px;
+ 
+    margin-left: 40px;
+    margin-top: 10px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+/* Gray/gray-400 */
+
+color: #495057;
+
+}
+
+@media  (max-width:450px ){
+    body{background-color:#E5E5E5 ;
+  
+    }
+    #contenedor{
+        width: 100%;
+ 
+     
+        
+    }
+
+    .divlogo{
+        
+        width: 48px;
+      
+        margin-top: 20px;
+     
+        margin-left: 15px;
+      
+        
+       
+      
+    }
+
+  
+    
+    
+   
+        textarea{
+            width: 90%;
+            height: 250px;
+         
+            border: none;
+            font-size: 32px;
+            color: #0A3871;
+            text-decoration: none;
+            margin-left: 5%;
+            background-color: #E5E5E5;
+            
+            
+        
+        }
+        
+        
+        
+        
+        .alertas{
+           position: relative;
+         width: 90%;
+            height: 16px;
+            left: 5%;
+          
+          
+            
+        }
+        .alerta{
+            
+            position: relative;
+            
+            float: left;
+          
+           
+        }
+        .alertas p {
+            font-size: 12px;
+            height: 16px;
+            padding-top: 2px;
+            
+           
+            
+            
+        }
+        
+        .botones{
+            position: relative;
+            width: 100%;
+            margin-top: 30px;
+       
+          
+           
+        }
+
+        #btnencriptar{
+            padding: none;
+            gap: none;
+            
+            width: 90%;
+            height: 67px;
+            margin-left: 5%;
+
+        }
+        #btndesencriptar{
+            padding: none;
+            gap: none;
+            
+            width: 90%;
+            height: 67px;
+            margin-left: 5%;
+            margin-top: 10px;
+
+        }
+      
+      
+        
+        
+        textarea::placeholder {
+             color: #0A3871; 
+             border: none;
+             font-family: 'Arial Narrow';
+             
+            
+         }
+        
+         #salidaEncriptador{
+            width: 100%;
+            height: auto;
+            left: 0%;
+            position: relative;
+            color: #495057;
+            display: none;
+            font-size: 24px;
+            
+           
+            
+        }
+
+      
+       
+        #mostrartexto{
+            position: static;
+            width: 100%;
+            font-size: 16px;
+            height: auto;
+            min-height:auto ;
+            margin-left: 0%;
+         
+            
+            margin-top: 10px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        /* or 24px */
+        
+        text-align: center;
+        
+        /* Gray/gray-400 */
+        
+        color: #495057;
+            
+        }
+       
+        
+        #btncopiar{
+            
+            width:85%;
+            height: 67px;
+            margin-left: 0%;
+            margin-top: 30px;
+           
+            
+            background: #D8DFE8;
+            /* Dark blue/dark-blue-300 */
+            
+            border: 1px solid #0A3871;
+            border-radius: 24px;
+            color: #0A3871;
+            
+        }
+
+         #txt_salida{
+        
+        gap: none;
+        
+        position: relative;
+        width: 90%;
+        height: auto;
+        left: 5%;
+        margin-top: none;
+        padding-top: none;
+        
+        
+        
+        box-shadow: none;
+        border-radius: none;
+        
+        }
+      
+
+ 
+        
+        
+        .txt_encriptar{
+            
+           position: static;
+            width: 100%;
+            height: 500px;
+            margin-top: 10px;
+            background-color: #E5E5E5;
+            border: none;
+            font-size: 32px;
+            color: #0A3871;
+            text-decoration: none;
+         
+            
+           
+           
+           
+        }
+        .salidaimg{
+            width: 100%;
+            height: auto;
+            
+        
+       
+        
+        }
+        #salidaimg h1{
+            width:100%;
+            height: auto;
+            margin-left: 0%;
+        
+            font-size: 24px;
+            font-weight: 700;
+            
+            text-align: center;
+            align-items: center;
+            
+            margin-top: 40px;
+            font-family: 'Inter';
+            font-style: normal;
+            line-height: 120%;
+            color: #343A40;
+            text-align: center;
+            
+        }
+        
+        #salidaimg p {
+            width: 100%;
+            font-size: 16px;
+            height: auto;
+            margin-left: 0%;
+         
+            
+            margin-top: 10px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        /* or 24px */
+        
+        text-align: center;
+        
+        /* Gray/gray-400 */
+        
+        color: #495057;
+        
+        }
+        .muñeco{
+            display: none;
+        }
+    
+    
+    }
+
+
+    @media (min-width:451px) and (max-width:950px  ){
+        body{background-color:#E5E5E5 ;
+      
+        }
+        #contenedor{
+            width: 100%;
+            height: 885px;
+            
+         
+            
+        }
+    
+        .divlogo{
+            
+            width: 48px;
+          
+            margin-top: 20px;
+         
+            margin-left: 15px;
+          
+            
+           
+          
+        }
+    
+      
+        
+        
+       
+            textarea{
+                width: 90%;
+                height: 500px;
+             
+                border: none;
+                font-size: 32px;
+                color: #0A3871;
+                text-decoration: none;
+                margin-left: 5%;
+                background-color: #E5E5E5;
+                
+                
+            
+            }
+            
+            
+            
+            
+            .alertas{
+               position: relative;
+             width: 90%;
+                height: 16px;
+                left: 5%;
+              
+              
+                
+            }
+            .alerta{
+                
+                position: relative;
+                
+                float: left;
+              
+               
+            }
+            .alertas p {
+                font-size: 12px;
+                height: 16px;
+                padding-top: 2px;
+                
+               
+                
+                
+            }
+            
+            .botones{
+                position: absolute;
+                width: 100%;
+                margin-top: 30px;
+               
+                
+               
+             
+               
+            }
+
+            #btnencriptar{
+                position: absolute;
+    
+                padding: none;
+                gap: none;
+                width: 41%;
+                height: 67px;
+                margin-left: 5%;
+               
+            
+            
+            
+            
+            }
+            
+            #btndesencriptar{
+                position: relative;
+                padding: none;
+                gap: none;
+                
+                width: 41%;
+                height: 67px;
+
+                margin-left: 51%;
+               
+            }
+
+           
+            
+            
+            
+            textarea::placeholder {
+                 color: #0A3871; 
+                 border: none;
+                 font-family: 'Arial Narrow';
+                 
+                
+             }
+            
+            
+            #salidaEncriptador{
+                width: 100%;
+                height: auto;
+                left: 0%;
+                position: relative;
+                color: #495057;
+                display: none;
+                font-size: 24px;
+                
+               
+                
+            }
+           
+            #mostrartexto{
+                position: static;
+                width: 100%;
+                font-size: 16px;
+                height: auto;
+                margin-left: 0%;
+             
+                
+                margin-top: 10px;
+            
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            /* or 24px */
+            
+            text-align: center;
+            
+            /* Gray/gray-400 */
+            
+            color: #495057;
+                
+            }
+           
+            
+            #btncopiar{
+                
+                width:85%;
+                height: 67px;
+                margin-left: 0%;
+                margin-top: 30px;
+               
+                
+                background: #D8DFE8;
+                /* Dark blue/dark-blue-300 */
+                
+                border: 1px solid #0A3871;
+                border-radius: 24px;
+                color: #0A3871;
+                
+            }
+    
+             #txt_salida{
+            
+            display: absolute;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 5%;
+            
+            
+            gap: 32px;
+            
+            position: absolute;
+            width: 80%;
+            height: auto;
+            left: 5%;
+            
+            
+            top: 910px;
+            
+            /* White */
+            
+            background: #FFFFFF;
+            box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+            border-radius: 32px;
+            
+            }
+    
+     
+            
+            
+            .txt_encriptar{
+                
+               position: static;
+                width: 100%;
+                height: 500px;
+                margin-top: 10px;
+                background-color: #E5E5E5;
+                border: none;
+                font-size: 32px;
+                color: #0A3871;
+                text-decoration: none;
+             
+                
+               
+               
+               
+            }
+            .salidaimg{
+                width: 100%;
+                height: auto;
+                
+            
+           
+            
+            }
+            #salidaimg h1{
+                width:100%;
+                height: auto;
+                margin-left: 0%;
+            
+                font-size: 24px;
+                font-weight: 700;
+                
+                text-align: center;
+                align-items: center;
+                
+                margin-top: 40px;
+                font-family: 'Inter';
+                font-style: normal;
+                line-height: 120%;
+                color: #343A40;
+                text-align: center;
+                
+            }
+            
+            #salidaimg p {
+                width: 100%;
+                font-size: 16px;
+                height: auto;
+                margin-left: 0%;
+             
+                
+                margin-top: 10px;
+            
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            /* or 24px */
+            
+            text-align: center;
+            
+            /* Gray/gray-400 */
+            
+            color: #495057;
+            
+            }
+            .muñeco{
+                display: none;
+            }
+        
+        
+        }

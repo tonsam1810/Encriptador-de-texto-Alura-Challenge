@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="divlogo">
+            <img class="logo" src="img/Logo.png" alt="logo">
+
+        </div>
+        
+    </header>
+
+    <main>
+        <div id="contenedor">
+            <div class="txt_encriptar">
+                <div class="divtextarea">
+                    <textarea id="txttextarea" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                <div class="encriptado">
+                    <div class="alertas">
+                        <img class="alerta" src="img/alerta.png" alt="alerta">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                        
+                    </div>
+                    <div class="botones">
+                        <button id="btnencriptar"type="button" >Encriptar</button>
+                        <button id="btndesencriptar"type="submit" >Desencriptar</button>
+    
+    
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="txt_salida">
+                <div id="salidaimg">
+                    <img class="muñeco" src="img\Muñeco.svg" alt="muñeco">
+                    <h1> Ningún mensaje fue encontrado</h1>
+        
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+    
+                </div>
+                <div id="salidaEncriptador">
+                    <p id="mostrartexto"></p>
+    
+                    <button id="btncopiar"type="submit" onclick="copiarContenido()">Copiar</button>
+                    
+                </div>
+            </div>
+            
+                
+            
+
+        </div>
+        
+     
+    </main>
+    
+</body>
+<script src="index.js"></script>
+</html>
